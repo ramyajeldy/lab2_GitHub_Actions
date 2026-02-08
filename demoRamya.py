@@ -1,8 +1,8 @@
 import requests
 
-def main():
+def get_github_status():
     response = requests.get("https://api.github.com")
-    print("GitHub API status code:", response.status_code)
+    return response.status_code
 
 if __name__ == "__main__":
-    main()
+    print("GitHub API status code:", get_github_status())
