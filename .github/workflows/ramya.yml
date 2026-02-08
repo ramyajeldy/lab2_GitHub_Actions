@@ -23,7 +23,7 @@ jobs:
         run: pytest
 
       - name: Generate output
-        run: python app.py
+        run: python demoRamya.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
